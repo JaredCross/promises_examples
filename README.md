@@ -136,7 +136,7 @@ console.log(promise.then.toString());
 
 What's happening in that snippet?  Take a second to write out what you think is going on:
 
-> YOUR ANSWER HERE
+> I believe the users.remove function is being assigned to the promise variable. Then, the console log shows up, but due to it have a promise.then statement, the log does not fire off until the promise is fulfilled. Once it is fulfilled, the result is converted to a string.
 
 So it turns out that Monk methods do indeed return a promise that supports `then`, so we can make use of that by changing the callback to a `then`:
 
@@ -209,7 +209,7 @@ That looks like the whole doc.  SO - now you know via experimentation that the `
 
 From reading and experimenting, what do you know about Promises and `then`?  Take a minute to write your emerging understanding here:
 
-> YOUR THOUGHTS HERE
+> Promises seem to be able to take an async function and wait to be assigned the result of that function until the promise is fulfilled via error or result. the .then function is what gets called with whatever arguments that async calls it with. In the case of our find or findOne function, this could be the data we are looking for.
 
 **#4 - Convert simple callbacks**
 
