@@ -274,7 +274,8 @@ messages.remove({}).then(function () {
 })
 ```
 
-> YOUR ANSWER HERE.  
+#####Remove all existing messages, when the messages are removed, then remove all existing users, when the users are removed, then inset Joe, when joe is inserted, then insert joe's id into messages, when that message is inserted, then log "Message was inserted!", message...message will be a an object with a new mongo_id and object we passed to insert into messages.
+
 
 Take a look at your answer above.  Does it account for the fact that the third callback gets `joe` passed to it?  How did that happen?
 
