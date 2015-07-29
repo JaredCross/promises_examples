@@ -1,7 +1,6 @@
-var db = require('monk')('localhost/javascript-promises-examples')
+var db = require('monk')('localhost/javascript-promises-examples');
 
-var users = db.get('users')
-
+var users = db.get('users');
 
 // users.remove({}, function (err) {
 //   users.insert({name: 'Joe'}, function (err, result) {
